@@ -1,3 +1,4 @@
+// src/components/FeaturedProjects.js
 import React from 'react';
 
 const FeaturedProjects = ({ filteredProjects }) => {
@@ -20,9 +21,13 @@ const FeaturedProjects = ({ filteredProjects }) => {
                 <span className={`project-difficulty difficulty-${project.difficulty}`}>{project.difficulty.charAt(0).toUpperCase() + project.difficulty.slice(1)}</span>
               </div>
               <div className="project-tags">
-                {project.tags.map((tag, i) => <span key={i} className="tag">{tag}</span>)}
+                {project.tags.map((tag, i) => (
+                  <span key={i} className="tag">{tag}</span>
+                ))}
               </div>
-              <div style={{ color: '#666', fontSize: '0.95rem' }}>Mentor: <b>{project.mentor}</b></div>
+              <div style={{ color: '#666', fontSize: '0.95rem' }}>
+                Mentor: <b>{project.mentor}</b>
+              </div>
             </div>
           ))}
         </div>
