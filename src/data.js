@@ -1,47 +1,63 @@
 
 export const clubsData = [
+  {
+    name: "Aeromodeling Club",
+    description: "Aeromodelling Club, IIT Kanpur has been innovating new concept planes since 2003 and ever since then there was no turning back, with time the projects have improved, new conceptual airplanes have been made here and it has set its own benchmark at the world level (especially at SAE Aero). Summer project provides the first step to students to convert their innovations, their new ideas and their imaginations into reality, a working model. Similar work has been done this year, many new planes have been made and tested effectively.",
+    icon: "🌐",
+    projectCount: 9,
+    id: "aero"
+  },
    {
-    name: "Robotics Club",
+    name: "Astronomy Club",
     description: "Build autonomous robots and explore the fascinating world of robotics and automation.",
     icon: "🤖",
     projectCount: 8,
-    id: "robotics"
+    id: "astro"
   },
   {
-    name: "Programming Club",
+    name: "Brain and Cognitive Science Club",
+    description: "The Brain & Cognitive Science Club (BCS IITK) is a student led community dedicated to explore the intersection of machine learning and neuroscience. Our work spans over a vast range of domains - from Computer Vision and Natural Language Processing to Neuroimaging, Brain mapping, Spiking Neural Networks and Brain-computer interfaces (BCIs). We also have an EEG device and an eye tracker using which we have built various interesting projects.",
+    icon: "💻",
+    projectCount: 12,
+    id: "bcs"
+  },
+  {
+    name: "Electronics Club",
+    description: "Dive into theoretical computer science, algorithms, and computational complexity.",
+    icon: "🧮",
+    projectCount: 6,
+    id: "electronics"
+  },
+  {
+    name: "Finance and Analytics Club",
+    description: "Design circuits, work with microcontrollers, and create innovative electronic systems.",
+    icon: "⚡",
+    projectCount: 10,
+    id: "fac"
+  },
+  {
+    name: "Game Development Club",
+    description: "Explore aerospace engineering through UAV design and aerodynamics research.",
+    icon: "✈️",
+    projectCount: 5,
+    id: "gdc"
+  },
+  {
+     name: "Programming Club",
     description: "Master programming languages and develop software solutions for real-world problems.",
     icon: "💻",
     projectCount: 12,
     id: "programming"
   },
   {
-    name: "BCS Club",
-    description: "Dive into theoretical computer science, algorithms, and computational complexity.",
-    icon: "🧮",
-    projectCount: 6,
-    id: "bcs"
-  },
-  {
-    name: "Electronics Club",
-    description: "Design circuits, work with microcontrollers, and create innovative electronic systems.",
-    icon: "⚡",
-    projectCount: 10,
-    id: "electronics"
-  },
-  {
-    name: "Aero Club",
-    description: "Explore aerospace engineering through UAV design and aerodynamics research.",
-    icon: "✈️",
-    projectCount: 5,
-    id: "aero"
-  },
-  {
-    name: "Web Development",
-    description: "Create modern web applications using cutting-edge frameworks and technologies.",
-    icon: "🌐",
-    projectCount: 9,
-    id: "web"
+     name: "Robotics Club",
+    description: "Build autonomous robots and explore the fascinating world of robotics and automation.",
+    icon: "🤖",
+    projectCount: 8,
+    id: "robo" 
   }
+  
+  
 ];
 
 export const projectsData = [
