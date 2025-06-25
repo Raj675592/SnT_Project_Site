@@ -1,11 +1,11 @@
 import React from 'react';
-
+import '../App.css';
 const Modal = ({ setShowModal }) => {
   return (
     <div className="modal" onClick={() => setShowModal(false)}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <span className="close" onClick={() => setShowModal(false)}>&times;</span>
-        <h2>Login to SnT Portal</h2>
+        <h2 className="head-login">Login to SnT Portal</h2>
         <form onSubmit={(e) => { e.preventDefault(); setShowModal(false); alert('Login functionality not implemented.'); }}>
           <div style={{ marginBottom: '1rem' }}>
             <label htmlFor="email" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Email:</label>

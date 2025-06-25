@@ -22,3 +22,44 @@ const ClubsSection = ({ clubsData, setClub }) => {
 };
 
 export default ClubsSection;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import ClubCard from './Card';
+// import './Cards.css';
+
+// const ClubsSection = ({ clubsData, setClub }) => {
+//   return (
+//     <section className="clubs-section" id="clubs">
+//       <div className="container">
+//         <h2 className="section-title" data-aos="fade-up">Our Clubs</h2>
+//         <div className="clubs-grid">
+//           {clubsData.map((clubData, idx) => (
+//             <ClubCard
+//               key={clubData.id || idx}
+//               clubData={clubData}
+//               onClick={setClub}
+//               index={idx}
+//             />
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default ClubsSection; 

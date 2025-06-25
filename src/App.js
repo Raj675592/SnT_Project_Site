@@ -5,12 +5,12 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import SearchSection from './components/SearchSection';
 import StatsSection from './components/StatsSection';
-import ClubsSection from './components/ClubsSection';
+ import ClubsSection from './components/ClubsSection';
 import FeaturedProjects from './components/FeaturedProjects';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
 import { clubsData, projectsData } from './data';  // Importing data from data.js
-
+import './components/Cards.css';
 import './App.css';
 
 const App = () => {
@@ -41,11 +41,19 @@ const App = () => {
     <>
       <Header setShowModal={setShowModal} />
       <HeroSection />
-      <SearchSection search={search} setSearch={setSearch} club={club} setClub={setClub} difficulty={difficulty} setDifficulty={setDifficulty} />
+      
       <StatsSection />
       <ClubsSection clubsData={clubsData} setClub={setClub} />
+      {/* <SearchSection 
+        search={search} 
+        setSearch={setSearch} 
+        club={club} 
+        setClub={setClub} 
+        difficulty={difficulty} 
+        setDifficulty={setDifficulty} 
+      /> */}
       <FeaturedProjects filteredProjects={filteredProjects} />
-      <Footer />
+      <Footer/>
       {showModal && <Modal setShowModal={setShowModal} />}
     </>
   );
