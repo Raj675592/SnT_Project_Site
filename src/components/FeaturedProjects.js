@@ -1,5 +1,5 @@
-// src/components/FeaturedProjects.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FeaturedProjects = ({ filteredProjects }) => {
   return (
@@ -25,8 +25,15 @@ const FeaturedProjects = ({ filteredProjects }) => {
                   <span key={i} className="tag">{tag}</span>
                 ))}
               </div>
-              <div style={{ color: '#666', fontSize: '0.95rem' }}>
+              <div style={{ color: '#ffffff', fontSize: '0.95rem' }}>
                 Mentor: <b>{project.mentor}</b>
+              </div>
+              <div style={{ marginTop: '1rem' }}>
+                <Link to={`/projects/${encodeURIComponent(project.title)}`}>
+                  <button className="explore-btn">
+                    Explore Project
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
