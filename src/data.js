@@ -207,13 +207,3 @@ export const projectsData = [
     mentor: "Prof. Kavya Reddy"
   }
 ];
-
-
-
-
-
-
-
-
-
-
