@@ -40,6 +40,7 @@ const FeaturedProjects = ({ filteredProjects }) => {
         </div>
       </div>
     </section>
+    
   );
 };
 

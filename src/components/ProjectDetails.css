@@ -91,7 +91,7 @@
   margin-bottom: 0.7rem;
 }
 .pro-meta-club, .pro-meta-mentor, .pro-meta-difficulty, .pro-meta-duration {
-  color: #e0e0e0;
+  color: #ffffff;
   font-size: 1.08rem;
   background: #232336;
   border-radius: 8px;
@@ -280,42 +280,6 @@
     max-width: 100px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .weekwise-container {
