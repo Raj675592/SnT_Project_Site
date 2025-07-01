@@ -21,7 +21,7 @@ const ProjectDetails = () => {
         <div className="pro-cover-meta-row">
           <div className="pro-cover-img-wrap">
             <img className="pro-cover-img" src={project.coverImage} alt={project.title} />
-             {/* <img className="pro-cover-img" src="https://scitechdaily.com/images/Drone-Over-Disaster-Area-777x518.jpg" alt={project.title} /> */}
+             
           </div>
           <div className="pro-meta-block">
            
@@ -50,29 +50,31 @@ const ProjectDetails = () => {
             </ul>
           </div>
         )}
-        {project.weekwiseExecution && (
-          <div className="pro-section">
-            <h3 className="pro-section-title">Weekwise Execution <span role="img" aria-label="calendar">📅</span></h3>
-            <ul className="pro-list">
-              {project.weekwiseExecution.map((week, i) => (
-                <li key={i}>
-                  <b>{week.week}:</b> {week.plan}
-                  <ul>
-                    {week.resources.map((res, j) => (
-                      <li key={j}><a href={res} target="_blank" rel="noopener noreferrer">{res}</a></li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
         {project.methodology && (
           <div className="pro-section">
             <h3 className="pro-section-title">Methodology <span role="img" aria-label="method">🧪</span></h3>
             <p>{project.methodology}</p>
           </div>
         )}
+        {project.weekwiseExecution && (
+          <div className="pro-section">
+            <h3 className="pro-section-title">Weekwise Execution <span role="img" aria-label="calendar">📅</span></h3>
+            <div className="weekwise-container">
+              {project.weekwiseExecution.map((week, i) => (
+                <div className="week-block" key={i}>
+                  <h4 className="week-title">{week.week}</h4>
+                  <p className="week-plan">{week.plan}</p>
+                  <ul className="week-resources">
+                    {week.resources.map((res, j) => (
+                      <li key={j}><a href={res} target="_blank" rel="noopener noreferrer">{res}</a></li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        
         {project.result && (
           <div className="pro-section">
             <h3 className="pro-section-title">Result <span role="img" aria-label="result">🏁</span></h3>
@@ -90,6 +92,7 @@ const ProjectDetails = () => {
             <p>{project.futureProspects}</p>
           </div>
         )}
+       
        <div className="pro-section">
           <Query />
         </div>

@@ -280,3 +280,78 @@
     max-width: 100px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.weekwise-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.week-block {
+  min-height: 50vh;
+  background: #252121;
+   background: linear-gradient(135deg, #01051a 0%, #010c3c 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.week-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.week-plan {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.week-resources {
+  list-style: none;
+  padding: 0;
+}
+
+.week-resources li {
+  margin-bottom: 0.5rem;
+}
