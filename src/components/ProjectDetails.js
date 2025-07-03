@@ -28,7 +28,7 @@ const ProjectDetails = () => {
             <h1 className="pro-title-main">{project.title}</h1>
             <div className="pro-meta-row">
               <span className="pro-meta-club">{project.club}</span>
-              <span className="pro-meta-mentor">Mentor: {project.mentor}</span>
+             
               <span className="pro-meta-difficulty">{project.difficulty}</span>
               <span className="pro-meta-duration">{project.duration}</span>
             </div>
@@ -92,7 +92,22 @@ const ProjectDetails = () => {
             <p>{project.futureProspects}</p>
           </div>
         )}
-       
+       <div className="pro-meta-row-mentor">
+              <span className="pro-meta-mentor1">Mentor: {project.mentor1}</span>
+              <span className="pro-meta-mentor1">Contact: {project.contact1}</span>
+              
+              </div>
+                     <div className="pro-meta-row-mentor">
+              <span className="pro-meta-mentor1">Mentor: {project.mentor2}</span>
+              <span className="pro-meta-mentor1">Contact: {project.contact2}</span>
+              
+              </div>
+                     <div className="pro-meta-row-mentor">
+              <span className="pro-meta-mentor1">Mentor: {project.mentor3}</span>
+              <span className="pro-meta-mentor1">Contact: {project.contact3}</span>
+              
+              </div>
+             
        <div className="pro-section">
           <Query />
         </div>

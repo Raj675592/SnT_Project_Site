@@ -73,7 +73,13 @@ export const projectsData = [
     duration: "8 weeks",
     difficulty: "advanced",
     tags: ["Python", "OpenCV", "Machine Learning", "ROS"],
-    mentor: "Dr. Rajesh Kumar",
+    mentor1: "Dr. Rajesh Kumar",
+    contact1:"98XXXXXXXX",
+    mentor2: "Dr. Rajkumar war",
+    contact2:"98XXXXXXXX",
+    mentor3: "Dr. Alex stokesss",
+    contact3:"98XXXXXXXX",
+    
     
     objectives: [
       "Understand the basics of drone mechanics and flight control",

@@ -44,7 +44,7 @@ useEffect(() => {
           <label htmlFor="textarea">How Can We Help You?</label>
           <textarea name="textarea" id="textarea" rows="10" cols="50" required value={text} onChange={e => setText(e.target.value)}></textarea>
         </div>
-        <button className="form-submit-btn" type="submit">Submit</button>
+        <button id="form-btn" className="form-submit-btn" type="submit">Submit</button>
       </form>
     </div>
     <div className="message-container">
