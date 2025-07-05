@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from './components/Header';
@@ -9,15 +10,19 @@ import StatsSection from './components/StatsSection';
 import FeaturedProjects from './components/FeaturedProjects';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
-import { clubsData, projectsData } from './data';  // Importing data from data.js
+import { clubsData, projectsData } from './data';
 import './components/Cards.css';
 import './App.css';
+ 
+
+import ProjectDetails from './components/ProjectDetails';
 
 const App = () => {
   const [search, setSearch] = useState('');
   const [club, setClub] = useState('');
   const [difficulty, setDifficulty] = useState('');
   const [showModal, setShowModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
@@ -38,24 +43,25 @@ const App = () => {
   }
 
   return (
-    <>
+    <Router>
       <Header setShowModal={setShowModal} />
-      <HeroSection />
       
-      <StatsSection />
-      <ClubsSection clubsData={clubsData} setClub={setClub} />
-      {/* <SearchSection 
-        search={search} 
-        setSearch={setSearch} 
-        club={club} 
-        setClub={setClub} 
-        difficulty={difficulty} 
-        setDifficulty={setDifficulty} 
-      /> */}
-      <FeaturedProjects filteredProjects={filteredProjects} />
-      <Footer/>
-      {showModal && <Modal setShowModal={setShowModal} />}
-    </>
+      <Routes>
+        <Route path="/" element={
+          <>
+          <HeroSection/>
+          <StatsSection/>
+           <ClubsSection clubsData={clubsData} setClub={setClub} />
+           <FeaturedProjects filteredProjects={filteredProjects} />
+            <Footer />
+              {showModal && <Modal setShowModal={setShowModal} />}
+          </>
+        }
+        />
+        <Route path="/projects/:title" element={<ProjectDetails/>}/>
+      </Routes>
+      </Router>
+
   );
 }
 

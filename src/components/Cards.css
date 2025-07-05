@@ -230,3 +230,7 @@ body {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 } 
+
+.club-card{
+  border: 1px solid #f0f0f0;
+}

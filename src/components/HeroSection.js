@@ -11,7 +11,7 @@ const HeroSection = () => {
             Discover exciting summer projects from all Science and Technology Council clubs.
           </p>
           <div className="hero-buttons">
-            <a href="#clubs" className="btn btn-primary">Explore Projects</a>
+            <a href="#clubs" className="btn btn-primary">Explore Clubs</a>
              {/* <a href="#" className="btn btn-primary">Get Started</a> */}
             {/* <a href="#" className="btn btn-outline">Become a Mentor</a> */}
           </div>

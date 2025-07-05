@@ -60,15 +60,112 @@ export const clubsData = [
   
 ];
 
+
+
+
+
+
 export const projectsData = [
-   {
+  {
     title: "Autonomous Drone Navigation",
     club: "Robotics Club",
-    description: "Develop an AI-powered drone that can navigate through obstacles using computer vision and machine learning algorithms.",
+    description: "Build an AI-powered drone that can navigate using computer vision and machine learning algorithms.",
     duration: "8 weeks",
     difficulty: "advanced",
     tags: ["Python", "OpenCV", "Machine Learning", "ROS"],
-    mentor: "Dr. Rajesh Kumar"
+    mentor1: "Dr. Rajesh Kumar",
+    contact1:"98XXXXXXXX",
+    mentor2: "Dr. Rajkumar war",
+    contact2:"98XXXXXXXX",
+    mentor3: "Dr. Alex stokesss",
+    contact3:"98XXXXXXXX",
+    
+    
+    objectives: [
+      "Understand the basics of drone mechanics and flight control",
+      "Integrate sensors for obstacle detection",
+      "Implement real-time computer vision-based navigation",
+      "Train machine learning models for autonomous decisions",
+      "Deploy code on onboard systems"
+    ],
+    weekwiseExecution: [
+      {
+        week: "Week 1",
+        plan: "Introduction to drone architecture and control systems.",
+        resources: [
+          "https://dronetutorials.com/architecture",
+          "https://youtube.com/intro-to-drones"
+        ]
+      },
+      {
+        week: "Week 2",
+        plan: "Sensor integration and calibration (e.g., LiDAR, IMU).",
+        resources: [
+          "https://docs.arduino.cc/built-in-examples",
+          "https://medium.com/sensor-calibration"
+        ]
+      },
+      {
+        week: "Week 3",
+        plan: "Setting up onboard computing environment and ROS basics.",
+        resources: [
+          "https://wiki.ros.org/",
+          "https://github.com/ros/ros_tutorials"
+        ]
+      },
+      {
+        week: "Week 4",
+        plan: "Implementing basic object detection using OpenCV.",
+        resources: [
+          "https://docs.opencv.org/",
+          "https://opencv-tutorial.readthedocs.io/"
+        ]
+      },
+      {
+        week: "Week 5",
+        plan: "Integrating vision with control for obstacle avoidance.",
+        resources: [
+          "https://arxiv.org/abs/vision-nav-control",
+          "https://youtube.com/integrated-drone-control"
+        ]
+      },
+      {
+        week: "Week 6",
+        plan: "Training ML models for autonomous flight decisions.",
+        resources: [
+          "https://scikit-learn.org/",
+          "https://keras.io/guides/"
+        ]
+      },
+      {
+        week: "Week 7",
+        plan: "Testing and debugging in simulated environments.",
+        resources: [
+          "https://gazebosim.org/",
+          "https://github.com/ros-simulation/gazebo_ros_pkgs"
+        ]
+      },
+      {
+        week: "Week 8",
+        plan: "Final integration and real-world testing.",
+        resources: [
+          "https://realflight.com/",
+          "https://dronetestingchecklist.com/"
+        ]
+      }
+    ],
+    methodology: "This project combines robotics, computer vision, and machine learning. The drone is equipped with sensors and a camera. It processes visual input using OpenCV and makes navigation decisions based on trained models. The Robot Operating System (ROS) is used for real-time control and data management.",
+    result: {
+      summary: "Successfully created a prototype of an autonomous drone that can avoid obstacles and navigate indoors.",
+      githubRepo: "https://github.com/user/drone-project",
+      demoLink: "https://youtu.be/drone-demo-video",
+      images: [
+        "https://domain.com/uploads/drone1.jpg",
+        "https://domain.com/uploads/drone2.jpg"
+      ]
+    },
+    coverImage: "https://scitechdaily.com/images/Drone-Over-Disaster-Area-777x518.jpg",
+    futureProspects: "This project lays the groundwork for fully autonomous UAV systems in environments like warehouses, disaster zones, and precision agriculture. Future work can involve swarm coordination, real-time cloud communication, and deployment in GPS-denied areas."
   },
   {
     title: "E-commerce Platform",
